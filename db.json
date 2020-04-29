@@ -1,14 +1,25 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "version": "v2",
+  "content": {
+    "messages": [
+      {
+        "type": "text",
+        "text": "simple text with button",
+        "buttons": [
+          {
+            "type": "url",
+            "caption": "External link",
+            "url": "https://manychat.com"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "action": "unset_field_value",
+        "field_name": "your field name"
+      }
+    ],
+    "quick_replies": []
   }
 }
